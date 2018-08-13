@@ -12,19 +12,10 @@ import * as burgerBuiderActions from "../../store/actions/index";
 
 class BurgerBuilder extends Component {
   state = {
-    purchasing: false,
-    loading: false,
-    error: false
+    purchasing: false
   };
 
-  componentDidMount() {
-    // axios
-    //   .get("https://burger-builder-kmv.firebaseio.com/ingredients.json")
-    //   .then(response => {
-    //     this.setState({ ingredients: response.data });
-    //   })
-    //   .catch(error => this.setState({ error: true }));
-  }
+  componentDidMount() {}
 
   updatePurchaseState(ingredients) {
     const sum = Object.keys(ingredients)
