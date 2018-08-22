@@ -156,7 +156,6 @@ class ContactData extends Component {
     Object.keys(updatedOrderForm).map(
       key => (formIsValid = updatedOrderForm[key].valid && formIsValid)
     );
-    console.log(formIsValid);
     this.setState({ orderForm: updatedOrderForm, formIsValid });
   };
 
